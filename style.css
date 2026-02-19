@@ -1,6 +1,6 @@
 
 * {
-  font-family: sans-serif;
+  font-family: 'poppins', sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -19,4 +19,9 @@ input[type="number"] {
 
 hr {
   width: 100%;
+}
+
+.attribution a {
+  color: mediumorchid;
+  font-family: monospace;
 }

@@ -10,8 +10,8 @@ function calculateAge() {
     const today = new Date();
 
     let years = today.getFullYear() - birthdate.getFullYear();
-    let months = today.getFullMonth() - birthdate.getFullMonth();
-    let days = today.getFullDay() - birthdate.getFullDay()
+    let months = today.getMonth() - birthdate.getMonth();
+    let days = today.getDay() - birthdate.getDay()
 
     if (days < 0) {
         months--;
@@ -27,5 +27,5 @@ function calculateAge() {
     document.getElementById('months').textContent = months;
     document.getElementById('days').textContent = days;
 
-    alert('hello')
+    // alert('hello')
 }

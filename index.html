@@ -26,58 +26,59 @@
 </head>
 
 <body>
-  <div class="space-y-10 px-4 bg-[#f5f5f5] h-[100vh] flex flex-col justify-center items-center">
-    <div
-      class="bg-purple-300 p-20 flex flex-col justify-center items-center md:flex w-[375px] lg:w-[500px] rounded-2xl rounded-br-[7rem] space-y-4">
+  <div class="space-y-10 px-4 bg-[#f5f5f5] h-[100vh] flex flex-col justify-center mx-auto items-center">
+    <div class="px-9">
+      <div
+        class="bg-purple-300 p-20 flex flex-col justify-center items-center md:flex w-[375px] lg:w-[500px] mx-auto rounded-2xl rounded-br-[7rem] space-y-4">
 
-      <!-- Input Section -->
-      <div class="flex justify-center items-center space-x-5 font-semibold">
-        <div>
-          <label>DAY</label>
-          <input type="number" id="day" placeholder="DD" class="p-[10px] w-[80px] rounded-md border border-[#ccc]">
+        <!-- Input Section -->
+        <div class="flex justify-center items-center space-x-5 font-semibold">
+          <div>
+            <label>DAY</label>
+            <input type="number" id="day" placeholder="DD" class="p-[10px] w-[80px] rounded-md border border-[#ccc]">
+          </div>
+
+          <div>
+            <label>MONTH</label>
+            <input type="number" id="month" placeholder="MM" class="p-[10px] w-[80px] rounded-md border border-[#ccc]">
+          </div>
+
+          <div>
+            <label>YEAR</label>
+            <input type="number" id="year" placeholder="YYYY" class="p-[10px] w-[80px] rounded-md border border-[#ccc]">
+          </div>
+
         </div>
 
-        <div>
-          <label>MONTH</label>
-          <input type="number" id="month" placeholder="MM" class="p-[10px] w-[80px] rounded-md border border-[#ccc]">
-        </div>
+        <!-- button -->
+        <button onclick="calculateAge()"
+          class="bg-purple-400 flex justify-center items-center text-white w-15 h-15 rounded-full cursor-pointer">
+          <img src="/assets/images/icon-arrow.svg" alt="">
+        </button>
 
-        <div>
-          <label>YEAR</label>
-          <input type="number" id="year" placeholder="YYYY" class="p-[10px] w-[80px] rounded-md border border-[#ccc]">
+
+
+
+
+        <!-- Result Section -->
+        <div class="result text-3xl font-semibold">
+          <p><span id="years" class="text-purple-400">--</span> years</p>
+          <p><span id="months" class="text-purple-400">--</span> months</p>
+          <p><span id="days" class="text-purple-400">--</span> days</p>
         </div>
 
       </div>
 
-      <!-- button -->
-      <button onclick="calculateAge()"
-        class="bg-purple-400 flex justify-center items-center text-white w-15 h-15 rounded-full cursor-pointer">
-        <img src="/assets/images/icon-arrow.svg" alt="">
-      </button>
-
-
-
-
-
-      <!-- Result Section -->
-      <div class="result text-3xl font-semibold">
-        <p><span id="years" class="text-purple-400">--</span> years</p>
-        <p><span id="months" class="text-purple-400">--</span> months</p>
-        <p><span id="days" class="text-purple-400">--</span> days</p>
+      <!-- footer -->
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">MuffinsCode</a>.
       </div>
 
+
+
+
     </div>
-
-    <!-- footer -->
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">MuffinsCode</a>.
-    </div>
-
-
-
-
-
 
   </div>
   <script src="script.js"></script>

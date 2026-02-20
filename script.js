@@ -28,4 +28,5 @@ function calculateAge() {
     document.getElementById('days').textContent = days;
 
     // alert('hello')
+    
 }
